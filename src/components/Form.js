@@ -3,7 +3,6 @@ import React from "react";
 const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
 
     const inputTextHandler = (e) => {
-        console.log(e.target.value);
         setInputText(e.target.value);
     };
 
@@ -18,7 +17,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
     function statusHandler(e){
         setStatus(e.target.value);
     };
-    
+
     return(
         <form>
             <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
